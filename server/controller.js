@@ -2,7 +2,7 @@ const db = require('../database/models.js');
 
 module.exports = {
   fetch: (req, res) => {
-    console.log('In GET...');
+    console.log('In GET...', req.query);
     const { listName } = req.query;
     db.Todo.findAll({
       where: {
