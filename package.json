@@ -1,10 +1,12 @@
 {
   "name": "mysql-review-workshop",
   "version": "1.0.0",
-  "description": "",
+  "description": "#Exercise-1 <br /> Install any dependencies you need and write a start script for your server. Build out your express server and route your requests (GET, POST, DELETE) to your controller. Controller functionality can be merely a console.log at this point. Make sure that your requests are hitting your endpoints.",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./server",
+    "build": "webpack -w"
   },
   "repository": {
     "type": "git",
@@ -20,9 +22,14 @@
   "dependencies": {
     "axios": "^0.18.0",
     "babel-core": "^6.26.3",
-    "babel-loader": "^8.0.0",
+    "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongoose": "^5.2.10",
+    "mysql2": "^1.6.1",
+    "nodemon": "^1.18.3",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
     "webpack": "^4.17.1",
