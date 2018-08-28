@@ -38,6 +38,7 @@ class List extends Component {
       .post('/api/todoList', { todo, listName: this.state.listName })
       .then(this.fetchTodos())
       .catch(err => console.log(err));
+    e.target.reset();
   }
 
   deleteTodo(todo) {
