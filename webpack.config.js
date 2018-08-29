@@ -14,7 +14,7 @@ module.exports = {
         test: /\.js[x]?/,
         exclude: /node_modules/,
         options: {
-          presets: ['react', 'env']
+          presets: ['@babel/react', '@babel/env']
         }
       }
     ]
